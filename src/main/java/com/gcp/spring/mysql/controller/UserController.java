@@ -39,10 +39,10 @@ public class UserController {
     return new ResponseEntity<>("Success", HttpStatus.OK);
   }
 
-  @GetMapping("/user")
-  public ResponseEntity<List<User>> getAllUsers() {
-    return new ResponseEntity<>(userService.getAllUsers(), HttpStatus.OK);
-  }
+  // @GetMapping("/user")
+  // public ResponseEntity<List<User>> getAllUsers() {
+  //   return new ResponseEntity<>(userService.getAllUsers(), HttpStatus.OK);
+  // }
 
   @PostMapping("/user/register")
   public ResponseEntity<HashMap<String, Object>> registerUser(@RequestBody HashMap<String, Object> userInfo
