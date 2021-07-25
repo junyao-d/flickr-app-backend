@@ -118,7 +118,7 @@ Check if the request has valid access token in the header
 
 * **Method:**
 
-  `POST`
+  `GET`
   
 *  **URL Params**  
   
@@ -128,15 +128,14 @@ Check if the request has valid access token in the header
   
     **Required:**
   
-   `username=[string]`
-   `password=[string]`
+   `tags=[string]`
 
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{token :  <token>}`
+    **Content:** HTML Elements
  
 * **Error Response:**
 
-  * **Code:** 404 NON_AUTHORITATIVE_INFORMATION <br />
-    **Content:** HTML Elements
+  * **Code:** 404 NOT_FOUND <br />
+    **Content:** `page can’t be found`
