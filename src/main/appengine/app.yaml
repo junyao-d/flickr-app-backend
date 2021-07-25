@@ -1,0 +1,3 @@
+runtime: java11
+instance_class: F4
+#service_account: app-admin@flickr-app-320611.iam.gserviceaccount.com
