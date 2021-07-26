@@ -29,9 +29,6 @@ public class UserController {
   private static final String USER_AGENT = "Mozilla/5.0";
 
   @Autowired
-  UserRepository userRepository;
-
-  @Autowired
   UserService userService;
 
   @GetMapping("/")
